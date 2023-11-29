@@ -3,9 +3,12 @@ document.entrada.enviar.addEventListener('submit', leFormulario);
 function leFormulario(event) {
 
     event.preventDefault();
-    const quantidade = document.entrada.quantidade.value;
+    const quantidade = document.entrada.quantidade.valueAsNumber;
     const fruta = document.entrada.fruta.value;
+    const origem = document.entrada.origem.value;
+    const destino = document.entrada.destino.value;    
 
-    console.log(`Eu tenho ${quantidade} ${fruta}`);
+    console.log(`${origem} doa ${quantidade} ${fruta} para ${destino}`);
+    //document.entrada.submit();
 
 }
