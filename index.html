@@ -18,27 +18,35 @@
         <p>Esta é a página principal que usa JavaScript para adicionar iteração.</p>
         <section>
             <form name="entrada">
-                <input type="number" name="quantidade" value="5" min="0" max="12">
             <fieldset>
                 <legend>Origem</legend>
                 <label> 
-                    <input type="radio" name="origem" value="maria" checked/> Maria
+                    <input type="radio" name="origem" value="pomar" checked/> Pomar
                 </label>
                 <label> 
                     <input type="radio" name="origem" value="joao"/> João
                 </label>
+                <label> 
+                    <input type="radio" name="origem" value="maria"/> Maria
+                </label>
+
             </fieldset>
 
             <fieldset>
                 <legend>Destino</legend>
                 <label> 
-                    <input type="radio" name="destino" value="maria" checked/> Maria
+                    <input type="radio" name="destino" value="pomar"/> Pomar
                 </label>
                 <label> 
                     <input type="radio" name="destino" value="joao"/> João
                 </label>
+                <label> 
+                    <input type="radio" name="destino" value="maria" checked/> Maria
+                </label>
+
             </fieldset>
-                <select name="fruta">
+            <input type="number" name="quantidade" value="1" min="0" max="12" step="1">
+            <select name="fruta">
                     <option value="maca">Maçã</option>
                     <option value="pera">Pera</option>
                     <option value="banana">Banana</option>
@@ -46,7 +54,12 @@
                 <button type="submit" name="enviar">Enviar</button>
             </form>
         </section>
-        <section></section>
+        <section id="saida">
+            <h2>João</h2>
+            <ol id="joao"></ol>
+            <h2>Maria</h2>
+            <ol id="maria"></ol>
+        </section>
     </main>
 </body>
 </html>
